@@ -39,6 +39,9 @@
 /proc/net/tcp
 /proc/net/udp
 /proc/sched_debug
+/proc/self/schedstat
+/proc/schedstat
+/proc/self/sched_debug
 /proc/self/environ
 /proc/version
 /root/.bash_history
@@ -120,3 +123,8 @@
 /var/www/html/{site_name}/config.php
 /var/www/logs/access.log
 /var/www/logs/access_log
+/etc/apache2/sites-enabled/000-default.conf
+/etc/nginx/sites-available/default.conf
+/etc/nginx/sites-enable/default.conf
+/etc/nginx/sites-available/default
+/etc/nginx/sites-enable/default
