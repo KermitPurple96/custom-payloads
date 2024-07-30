@@ -41,6 +41,7 @@
 /proc/sched_debug
 /proc/self/schedstat
 /proc/schedstat
+/proc/stat
 /proc/self/sched_debug
 /proc/self/environ
 /proc/version
