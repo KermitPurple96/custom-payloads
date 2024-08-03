@@ -1,3 +1,4 @@
+/app/etc/local.xml
 /etc/aliases
 /etc/anacrontab
 /etc/apache2/apache2.conf
@@ -40,6 +41,7 @@
 /etc/init.d/apache2
 /etc/inittab
 /etc/issue
+/etc/knockd.conf
 /etc/lighttpd.conf
 /etc/lilo.conf
 /etc/logrotate.d/ftp
@@ -346,8 +348,11 @@
 /var/www/<vhost>/__init__.py
 /var/www/html/.htaccess
 /var/www/html/config.php
+/var/www/html/db_connect.php
+/var/www/html/utils.php
 /var/www/html/{site_name}/.htaccess
 /var/www/html/{site_name}/config.php
+/var/www/html<VHOST>/__init__.py
 /var/www/log/access_log
 /var/www/log/error_log
 /var/www/logs/access.log
