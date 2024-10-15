@@ -17,6 +17,16 @@ def to_unicode(char):
 def to_html(char):
     return html.escape(char)  # Convierte el carácter a su entidad HTML
 
+# Función para convertir todos los formatos y etiquetarlos
+def to_all_formats(char):
+    return (
+        f"Hex: {to_hex(char)}\n"
+        f"Decimal: {to_decimal(char)}\n"
+        f"Octal: {to_octal(char)}\n"
+        f"Unicode: {to_unicode(char)}\n"
+        f"HTML: {to_html(char)}"
+    )
+
 # Función para procesar un archivo de texto o una cadena
 def process_characters(chars, format_func):
     return [format_func(char) for char in chars]
@@ -29,7 +39,7 @@ def interpret_separator(separator):
 if __name__ == "__main__":    
     parser = argparse.ArgumentParser(description="Convert characters to hex, decimal, octal, unicode, or HTML.")
     parser.add_argument("input", help="Character or path to a file containing characters")
-    parser.add_argument("-f", "--format", choices=["hex", "decimal", "octal", "unicode", "html"], default="hex", help="Output format")
+    parser.add_argument("-f", "--format", choices=["hex", "decimal", "octal", "unicode", "html", "all"], default="hex", help="Output format")
     parser.add_argument("-s", "--separator", default="\n", help="Separator between characters in the output")
 
     args = parser.parse_args()
@@ -40,7 +50,8 @@ if __name__ == "__main__":
         "decimal": to_decimal,
         "octal": to_octal,
         "unicode": to_unicode,
-        "html": to_html
+        "html": to_html,
+        "all": to_all_formats
     }[args.format]
 
     # Check if input is a file or a single character
