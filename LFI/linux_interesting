@@ -288,6 +288,7 @@
 /var/log/boot
 /var/log/chttp.log
 /var/log/cups/error.log
+/var/log/cron.log
 /var/log/daemon.log
 /var/log/debug
 /var/log/dmesg
@@ -346,6 +347,11 @@
 /var/spool/cron/crontabs/root
 /var/webmin/miniserv.log
 /var/www/<vhost>/__init__.py
+/var/www/html/wp-config.php
+/var/www/configuration.php
+/var/www/html/inc/header.inc.php
+/var/www/html/sites/default/settings.php
+/var/www/config.php
 /var/www/html/.htaccess
 /var/www/html/config.php
 /var/www/html/db_connect.php
