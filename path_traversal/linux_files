@@ -884,5 +884,13 @@
 /usr/local/apache2/htdocs/index.html
 /usr/share/nginx/html/index.html
 /opt/lampp/htdocs/index.php
-/home/<usuario>/public_html/index.html
-/home/<usuario>/www/index.html
+/home/*/public_html/index.html
+/home/*/www/index.html
+/Library/WebServer/Documents/index
+/var/www/index
+/var/www/html/index
+/srv/http/index
+/usr/local/apache2/htdocs/index
+/usr/share/nginx/html/index
+/home/*/public_html/index
+/home/*/www/index
