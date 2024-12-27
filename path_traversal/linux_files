@@ -878,3 +878,11 @@
 /www/logs/freebsddiary-access_log
 /www/logs/freebsddiary-error.log
 /www/logs/proftpd.system.log
+/var/www/index.html
+/var/www/html/index.html
+/srv/http/index.html
+/usr/local/apache2/htdocs/index.html
+/usr/share/nginx/html/index.html
+/opt/lampp/htdocs/index.php
+/home/<usuario>/public_html/index.html
+/home/<usuario>/www/index.html
