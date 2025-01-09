@@ -405,3 +405,7 @@
 /var/www/logs/access_log
 /var/www/logs/error.log
 /var/www/logs/error_log
+/etc/redis/redis.conf
+/var/lib/redis/dump.rdb
+/var/lib/redis/appendonly.aof
+/var/log/redis/redis-server.log
